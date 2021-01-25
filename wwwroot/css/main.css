@@ -1,0 +1,17 @@
+﻿img {
+    border-radius: 8px;
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
