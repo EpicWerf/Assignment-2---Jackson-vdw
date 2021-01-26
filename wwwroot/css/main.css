@@ -1,4 +1,4 @@
-﻿/*Change image settings*/
+﻿/*Change image appearance*/
 img {
     border-radius: 8px;
     max-width: 75%;
@@ -8,10 +8,12 @@ img {
     margin-right: auto;
 }
 
+/*Change center class appearance*/
 .center {
     text-align: center;
 }
 
+/*Change label appearance*/
 label {
     display: inline-block;
     width: 150px;
