@@ -1,0 +1,33 @@
+﻿@{ ViewBag.headerText = "Welcome to my very own website";
+    ViewBag.Title = "Jackson van der Werf";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link rel="icon" href="~/img/Custom-Icon-Design-Mono-Business-2-Coffee.ico">
+</head>
+<body>
+    @*Header including navigation links*@
+    <header>
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
+            </ul>
+        </menu>
+        <p>@ViewBag.headerText</p>
+    </header>
+
+    @RenderBody()
+
+    <!--Footer including script sources-->
+    <footer>
+        <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="~/js/javascript.js"></script>
+    </footer>
+</body>
+</html>

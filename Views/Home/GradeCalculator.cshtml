@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Assignment_2___Jackson_vdw.Models.GradeCalculatorModel
+<body>
+    <!--Grade Calculator-->
+    <div class="center">
+        <h3>Enter your grades in the following categories:</h3>
+        <form method="post">
+
+            <label>Assignments:</label>
+            <input id="assignments" asp-for="assignments"/>
+            <br />
+
+            <label>Group Projects:</label>
+            <input id="group_projects" asp-for="group_projects"/>
+            <br />
+
+            <label>Quizzes:</label>
+            <input id="quizzes" asp-for="quizzes"/>
+            <br />
+
+            <label>Exams:</label>
+            <input id="exams" asp-for="exams"/>
+            <br />
+
+            <label>INTEX:</label>
+            <input id="intex" asp-for="intex"/>
+            <br />
+            <br />
+
+            <input type="submit" value="Calculate my grade" id="submitButton">
+
+            <div asp-validation-summary="All"></div>
+        </form>
+    </div>
+</body>
