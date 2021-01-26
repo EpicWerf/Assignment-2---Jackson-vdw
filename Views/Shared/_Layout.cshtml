@@ -1,5 +1,7 @@
 ﻿@{ ViewBag.headerText = "Welcome to my very own website";
     ViewBag.Title = "Jackson van der Werf";
+    ViewBag.Home = "Home";
+    ViewBag.GradeCalc = "Grade Calculator";
 }
 
 <!DOCTYPE html>
@@ -13,13 +15,13 @@
 <body>
     @*Header including navigation links*@
     <header>
+        <p>@ViewBag.headerText</p>
         <menu>
             <ul>
-                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                <li><a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
+                <li><a asp-controller="Home" asp-action="Index">@ViewBag.Home</a></li>
+                <li><a asp-controller="Home" asp-action="GradeCalculator">@ViewBag.GradeCalc</a></li>
             </ul>
         </menu>
-        <p>@ViewBag.headerText</p>
     </header>
 
     @RenderBody()

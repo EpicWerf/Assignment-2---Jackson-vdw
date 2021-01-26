@@ -12,23 +12,23 @@
         <form method="post">
 
             <label>Assignments:</label>
-            <input id="assignments" asp-for="assignments"/>
+            <input id="assignments" asp-for="assignments" />
             <br />
 
             <label>Group Projects:</label>
-            <input id="group_projects" asp-for="group_projects"/>
+            <input id="group_projects" asp-for="group_projects" />
             <br />
 
             <label>Quizzes:</label>
-            <input id="quizzes" asp-for="quizzes"/>
+            <input id="quizzes" asp-for="quizzes" />
             <br />
 
             <label>Exams:</label>
-            <input id="exams" asp-for="exams"/>
+            <input id="exams" asp-for="exams" />
             <br />
 
             <label>INTEX:</label>
-            <input id="intex" asp-for="intex"/>
+            <input id="intex" asp-for="intex" />
             <br />
             <br />
 
@@ -36,5 +36,10 @@
 
             <div asp-validation-summary="All"></div>
         </form>
+    </div>
+
+    @*Output for grade calculator. Not currenlty being used because submit button refreshes page. But might be implemented in a later build.*@
+    <div class="center">
+        <p id="grade_output" asp-for="grade_output"></p>
     </div>
 </body>
