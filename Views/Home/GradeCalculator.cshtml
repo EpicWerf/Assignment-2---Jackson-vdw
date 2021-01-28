@@ -5,30 +5,31 @@
 }
 
 @model Assignment_2___Jackson_vdw.Models.GradeCalculatorModel
+
 <body>
     <!--Grade Calculator-->
     <div class="center">
         <h3>Enter your grades in the following categories:</h3>
-        <form method="post">
+        <form asp-action="GradeCalculator" method="post">
 
-            <label>Assignments:</label>
-            <input id="assignments" asp-for="assignments" />
+            <label asp-for="assignments">Assignments:</label>
+            <input asp-for="assignments" />
             <br />
 
-            <label>Group Projects:</label>
-            <input id="group_projects" asp-for="group_projects" />
+            <label asp-for="group_projects">Group Projects:</label>
+            <input asp-for="group_projects" />
             <br />
 
-            <label>Quizzes:</label>
-            <input id="quizzes" asp-for="quizzes" />
+            <label asp-for="quizzes">Quizzes:</label>
+            <input asp-for="quizzes" />
             <br />
 
-            <label>Exams:</label>
-            <input id="exams" asp-for="exams" />
+            <label asp-for="exams">Exams:</label>
+            <input asp-for="exams" />
             <br />
 
-            <label>INTEX:</label>
-            <input id="intex" asp-for="intex" />
+            <label asp-for="intex">INTEX:</label>
+            <input asp-for="intex" />
             <br />
             <br />
 
